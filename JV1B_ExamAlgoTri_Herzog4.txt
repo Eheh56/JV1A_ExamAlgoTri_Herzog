@@ -1,0 +1,16 @@
+4/ Le tri à bulles est considéré comme très lent. Pourquoi ? Peut-on avoir une idée du temps
+nécessaire à son exécution, estimer son ordre de grandeur ? Détaillez votre réponse.
+
+le tri à bulles est très lent car au lieu d'analyser toute les données et de trier en suite, il analyse 2 données et choisis la plus grande. par exemple :
+
+Une liste : [5, 3, 6, 8, 7]
+le programme regarde si 5>3,
+oui donc la liste devient : [3, 5, 6, 8, 7]
+ensuite est ce que 5>6,
+non donc la liste ne bouge pas.
+ensuite si 6>8, 
+non donc la liste ne bouge pas.
+et pour finir est ce que 8>7?
+oui donc la liste final est : [3, 5, 6, 7, 8]
+
+comme on regarde chaque valeur 2 fois, a chaque fois que l'on augmente la liste de 1 donnéle alors le temps est 2 fois plus long donc si on appelle la liste N, ça équivaut a N^2
